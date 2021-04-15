@@ -1,37 +1,26 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-class Post extends Model {};
-
-Post.init({
-    id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-    title: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    image: {
-        type: DataTypes.STRING
-    },
-    author: {
-          type: DataTypes.STRING,
-          references: {
-            model: 'user',
-            key:'id'
-          }
-        },
-    },
+const postSchema = new Schema (
+  {
+  title: { type: String, required: true },
+  image: { type: String},
+  author: {
+  type: Schema.Types.ObjectId,
+  ref: 'User',
+},
+  comments: [
     {
-      sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'post',
-});
+    type: Schema.Types.ObjectId,
+    ref: 'Comment',
+  },
+],
+},
+{
+  timestamps: true,
+}
+);
 
-module.exports= Rides;
+const Post = mongoose.model("Post", postSchema);
 
+module.exports = Post;
