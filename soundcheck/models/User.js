@@ -11,6 +11,9 @@ const userSchema = new Schema(
   email: { type: String, required: true },
   password: { type: String, required: true },
   image: { type: String},
+  imagePublicId: { type: String},
+  coverImage: { type:String},
+  coverImagePublicId: { type:String},
   posts:[
     {
     type: Schema.Types.ObjectId,
