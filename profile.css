@@ -1,0 +1,44 @@
+:root {
+    --gold: #ffcb73;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* background: var(--gold) */
+}
+
+li {
+    list-style-type: none;
+    margin: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.second-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: white; */
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 280px
+}
+
+.profile {
+    background: var(--gold)
+    /* height: 100%; */
+    /* width: 600px; */
+}
