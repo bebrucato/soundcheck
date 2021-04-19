@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import cloudinary from 'cloudinary';
+const ImageUpload = require('./utils/imageUpload')
+
+
 
 ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-import ImageUpload from "./utils/imageUpload";
+
 import React from "react";
 
 function App() {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class side-bar extends Component {
+class SideBar extends Component {
     render() {
         return (
             <div>
