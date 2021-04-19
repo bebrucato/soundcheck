@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "./side-bar.css";
 
 class SideBar extends Component {
     render() {
@@ -19,3 +20,5 @@ class SideBar extends Component {
         )
     }
 }
+
+export default SideBar;

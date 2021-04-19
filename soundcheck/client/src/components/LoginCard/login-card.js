@@ -27,3 +27,5 @@ class LoginCard extends Component {
         )
     }
 }
+
+export default LoginCard;
