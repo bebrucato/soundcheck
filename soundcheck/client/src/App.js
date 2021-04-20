@@ -6,6 +6,7 @@ import ChatWidget from "./components/ChatWidget/ChatWidget";
 import 'react-chat-widget/lib/styles.css';
 import Card from "./components/Card/index";
 import Form from "./components/Form/index";
+import ImageUpload from "./utils/imageUpload";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ChatWidget />
         <Card />
         <Form />
+        <ImageUpload />
 
          {/* <Switch>
           <Route exact path="/" component={Home} />
