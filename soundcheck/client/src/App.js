@@ -24,6 +24,7 @@ function App() {
          <Switch>
           <Route exact path="/" component={Search} />
           <Route exact path="/signin" component={Signin} />
+          <Signin />
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>

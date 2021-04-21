@@ -26,3 +26,5 @@ class SignupCard extends Component {
         )
     }
 }
+
+export default SignupCard;
