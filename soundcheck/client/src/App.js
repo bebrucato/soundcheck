@@ -9,11 +9,13 @@ import Form from "./components/Form/index";
 import ImageUpload from "./utils/imageUpload";
 import Search from "./pages/Search";
 import Signin from "./pages/Signin";
+import Landing from "./pages/Landing/index"
 
 function App() {
   return (
     <Router>
       <div>
+        <Landing />
         <SideBar />
         {/* <LoginCard />
         <SideBar /> 
