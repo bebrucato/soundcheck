@@ -7,23 +7,25 @@ import 'react-chat-widget/lib/styles.css';
 import Card from "./components/Card/index";
 import Form from "./components/Form/index";
 import ImageUpload from "./utils/imageUpload";
+import Search from "./pages/Search";
+import Signin from "./pages/Signin";
 
 function App() {
   return (
     <Router>
       <div>
-        <LoginCard />
+        {/* <LoginCard />
         <SideBar /> 
         <ChatWidget />
         <Card />
         <Form />
-        <ImageUpload />
+        <ImageUpload /> */}
 
-         {/* <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/saved" component={Saved} />
-          <Route component={NoMatch} />
-        </Switch> */}
+         <Switch>
+          <Route exact path="/" component={Search} />
+          <Route exact path="/signin" component={Signin} />
+          {/* <Route component={NoMatch} /> */}
+        </Switch>
       </div>
     </Router>
   );
