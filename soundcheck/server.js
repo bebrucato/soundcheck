@@ -1,4 +1,5 @@
 const express = require("express");
+const bcrypt = require("bcrypt");
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
