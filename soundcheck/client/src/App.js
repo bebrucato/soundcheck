@@ -1,5 +1,4 @@
 import React from "react";
-import LoginCard from "./components/LoginCard/login-card";
 import SideBar from "./components/SideBar/side-bar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ChatWidget from "./components/ChatWidget/ChatWidget";
@@ -15,19 +14,19 @@ function App() {
   return (
     <Router>
       <div>
-        <Landing />
-        <SideBar />
-        {/* <LoginCard />
-        <SideBar /> 
+        {/* <Landing />
+        <SideBar /> */}
+        <Signin />
+        {/* <SideBar /> 
         <ChatWidget />
         <Card />
         <Form />
-        <ImageUpload /> */}
+        <ImageUpload />  */}
 
          <Switch>
-          <Route exact path="/" component={Search} />
-          <Route exact path="/signin" component={Signin} />
-          <Signin />
+          {/* <Route exact path="/" component={Search} />
+          <Route exact path="/signin" component={Signin} /> */}
+          {/* <Signin /> */}
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>
