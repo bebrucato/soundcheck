@@ -11,14 +11,14 @@ class Login extends Component {
         return (
             <div>
                 <div class="logo">
-                    {PrimaryLogo}
+                <img src={PrimaryLogo} alt="Logo" />
                 </div>
                 <div class="card-container">
                     <div class="login-card">
-                        {LoginCard}
+                        <LoginCard />
                     </div>
                     <div class="signup-card">
-                        {SignupCard}
+                        <SignupCard />
                     </div>
                 </div>
             </div>

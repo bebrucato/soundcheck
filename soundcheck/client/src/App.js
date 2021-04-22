@@ -15,18 +15,11 @@ function App() {
   return (
     <Router>
       <div>
-<<<<<<< HEAD
+        {/* <Landing />
+        <SideBar /> */}
+        {/* <Signin /> */}
         <Login />
-        {/* <Landing />
-        <SideBar /> */}
-        {/* <LoginCard />
-        <SideBar /> 
-=======
-        {/* <Landing />
-        <SideBar /> */}
-        <Signin />
         {/* <SideBar /> 
->>>>>>> 310d4ac22df2559710270b64aba793ee4160dcef
         <ChatWidget />
         <Card />
         <Form />
