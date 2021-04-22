@@ -10,13 +10,15 @@ import ImageUpload from "./utils/imageUpload";
 import Search from "./pages/Search";
 import Signin from "./pages/Signin";
 import Landing from "./pages/Landing/index"
+import Login from "./pages/Login/index"
 
 function App() {
   return (
     <Router>
       <div>
-        <Landing />
-        <SideBar />
+        <Login />
+        {/* <Landing />
+        <SideBar /> */}
         {/* <LoginCard />
         <SideBar /> 
         <ChatWidget />

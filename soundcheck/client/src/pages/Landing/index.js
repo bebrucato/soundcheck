@@ -9,9 +9,9 @@ class Landing extends Component {
         return (
         <div>
             <div className="hero">
-            <img src={PrimaryLogo} alt="SOUNDCHECK" />
+                <img src={PrimaryLogo} alt="SOUNDCHECK"/>
+                <button className="landing-button">Login // Sign Up</button>
             </div>
-            <button className="landing-button">Login // Sign Up</button>
         </div>
         )
     }
