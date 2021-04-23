@@ -1,4 +1,5 @@
 const db = require("../models");
+const bcrypt = require("bcrypt");
 
 module.exports = {
     findAll: function(req, res) {
@@ -13,6 +14,16 @@ module.exports = {
         .findById(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
+    },
+    login: function(req,res) {
+      db.User.find({username:req.body.username})
+      .then(dbModel => { 
+        if(!bcrypt.compareSync(request.body.password, dbModel.password)) 
+          {
+            return response.status(400).send({ message: "The password is invalid" });
+        }
+        res.json(dbModel)
+      }).catch(err => res.status(422).json(err));
     },
     create: function(req, res) {
       db.User
