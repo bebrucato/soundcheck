@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "./components/SideBar/side-bar";
+// import SideBar from "./components/SideBar/sidebar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ChatWidget from "./components/ChatWidget/ChatWidget";
 import 'react-chat-widget/lib/styles.css';
@@ -10,15 +10,17 @@ import Search from "./pages/Search";
 import Signin from "./pages/Signin";
 import Landing from "./pages/Landing/index"
 import Login from "./pages/Login/index"
+import InternalProfile from "./pages/internalprofile";
 
 function App() {
   return (
     <Router>
       <div>
+        <InternalProfile />
         {/* <Landing />
         <SideBar /> */}
         {/* <Signin /> */}
-        <Login />
+        {/* <Login /> */}
         {/* <SideBar /> 
         <ChatWidget />
         <Card />

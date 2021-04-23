@@ -1,0 +1,28 @@
+.profilebox {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 350px;
+    height: 450px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 3px solid  rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.title {
+    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    color: rgba(167, 62, 62, 0.8);
+    align-self: flex-start;
+    margin-left: 2px;
+    width: 150px;
+    height: 150px;
+}
+
