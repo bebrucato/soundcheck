@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import {useHistory} from "react-router-dom";
 import "./login-card.css"
 import API from "../../utils/API";
 
 function LoginCard() {
+    const history = useHistory()
     var [form,setForm]=useState({});
     function onChangeHandler({target:{name,value}}) {
         console.log(name,value)
@@ -11,10 +13,14 @@ function LoginCard() {
         [name]:value
       })  
     };
-    function onClickHandler(){
-        API.login(form).then( ()=> 
+    function onClickHandler(event){
+        event.preventDefault()
+        API.login(form).then( (res)=>{
+            console.log(res)
             setForm({})
-        )
+            localStorage.setItem("user",JSON.stringify(res.data.user))
+            history.push("/home")
+        })
     };
     return (
         <form >

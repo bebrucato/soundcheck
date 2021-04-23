@@ -4,6 +4,7 @@ import LoginCard from "../../components/LoginCard/login-card";
 // import PrimaryLogo from "../../media/SOUNDCHECKprimary.png";
 import PrimaryLogo from "./soundcheckprimary.png";
 import "./login.css"
+import ImageUpload from "../../utils/imageUpload"
 
 
 class Login extends Component {
@@ -20,6 +21,7 @@ class Login extends Component {
                     <div class="signup-card">
                         <SignupCard />
                     </div>
+                    <ImageUpload />
                 </div>
             </div>
         )

@@ -18,17 +18,32 @@ module.exports = {
     login: function(req,res) {
       db.User.find({username:req.body.username})
       .then(dbModel => { 
-        if(!bcrypt.compareSync(request.body.password, dbModel.password)) 
-          {
-            return response.status(400).send({ message: "The password is invalid" });
+        console.log(dbModel)
+        if(!bcrypt.compareSync(req.body.password, dbModel[0].password)) 
+        {
+            return res.status(400).send({ message: "The password is invalid" });
         }
-        res.json(dbModel)
+        req.session.save(() => {
+          req.session.loggedIn = true;
+          req.session.id= dbModel._id
+          res
+            .status(200)
+            .json({ user: dbModel, message: 'You are now logged in!' });
+        });
       }).catch(err => res.status(422).json(err));
     },
     create: function(req, res) {
       db.User
         .create(req.body)
-        .then(dbModel => res.json(dbModel))
+        .then(dbModel => {
+          req.session.save(() => {
+            req.session.loggedIn = true;
+            req.session.id= dbModel._id
+            res
+              .status(200)
+              .json({ user: dbModel, message: 'You are now logged in!' });
+          });
+        })
         .catch(err => res.status(422).json(err));
     },
     update: function(req, res) {

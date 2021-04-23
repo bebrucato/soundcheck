@@ -22,8 +22,8 @@ class ImageUpload extends React.Component {
   showWidget = () => {
     
     let widget = window.cloudinary.createUploadWidget({ 
-       cloudName: `your cloudName`,
-       uploadPreset: `your uploadPreset`}, 
+       cloudName: `bebrucato`,
+       uploadPreset: `ml_default`}, 
     (error, result) => {
       if (!error && result && result.event === "success") { 
       console.log(result.info.url); 

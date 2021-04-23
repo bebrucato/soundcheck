@@ -1,8 +1,10 @@
 import { set } from 'mongoose';
+import {useHistory} from "react-router-dom";
 import React, { useState } from 'react';
 import API from "../../utils/API";
 
 function SignupCard() {
+    const history = useHistory()
     var [form,setForm]=useState({});
     function onChangeHandler({target:{name,value}}) {
         console.log(name,value)
@@ -12,9 +14,11 @@ function SignupCard() {
       })  
     };
     function onClickHandler(){
-        API.signUp(form).then( ()=> 
+        API.signUp(form).then( (res)=>{
             setForm({})
-        )
+            localStorage.setItem("user",JSON.stringify(res.data.user))
+            history.push("/home")
+        })
     };
 
 
