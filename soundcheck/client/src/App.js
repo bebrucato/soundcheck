@@ -36,9 +36,8 @@ function App() {
         {/* <Landing />
         <SideBar /> */}
         {/* <Signin /> */}
-        <Route  exact path="/login" >
-       <Login />
-       </Route>
+      
+       
         {/* <SideBar /> 
         <ChatWidget />
         <Card />
@@ -46,6 +45,12 @@ function App() {
         <ImageUpload />  */}
 
          <Switch>
+         <Route  exact path="/" >
+       <Landing />
+       </Route>
+       <Route  exact path="/login" >
+       <Login />
+       </Route>
           <PrivateRoute exact path="/search" component={Search} /> 
           {/* <Route exact path="/signin" component={Signin} />  */}
           {/* <Signin /> */}
