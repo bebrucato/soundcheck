@@ -1,0 +1,73 @@
+/* font-family: 'Josefin Sans', sans-serif; */
+
+:root {
+    --gold: #ffcb73;
+}
+
+body {
+    background-color:var(--gold);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid blue; */
+    margin-bottom: 2rem;
+}
+
+.login-card,
+.signup-card {
+    background-color: whitesmoke;
+    min-width: 200px;
+    width: 350px;
+    height: 450px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 3px solid  rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 1rem 2rem 2rem 2rem;
+    /* align-self: center; */
+}
+
+.signup-card {
+    margin-left: 4rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
+.form-text {
+    font-size: .7rem;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.submit-button {
+    justify-content: center;
+    border: 5px none red;
+    height: 50px;
+    width: 100px;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.897);
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    align-self: flex-end;
+}

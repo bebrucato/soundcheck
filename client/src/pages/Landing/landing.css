@@ -1,0 +1,42 @@
+/* font-family: 'Josefin Sans', sans-serif; */
+
+:root {
+    --gold: #ffcb73;
+}
+
+body {
+    background-color:var(--gold);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+img {
+    width: 500px;
+}
+
+
+.landing-button {
+    /* justify-content: center; */
+    border: 5px none red;
+    align-self: center;
+    height: 100px;
+    width: 400px;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.897);
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

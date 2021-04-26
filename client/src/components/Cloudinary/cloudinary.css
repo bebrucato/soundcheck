@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 450px;
+    height: 450px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid  rgba(0, 0, 0, 0.8);
+}
