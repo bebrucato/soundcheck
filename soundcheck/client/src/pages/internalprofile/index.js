@@ -6,6 +6,8 @@ import SideBar from "../../components/SideBar/sidebar"
 // import Cloudinary from '../../components/Cloudinary/cloudinary';
 import ProfileBox from '../../components/ProfileBox/profilebox'
 import "./internalprofile.css";
+import { checkout } from '../../../../../routes/api/users';
+
 
 class InternalProfile extends Component {
     render() {
