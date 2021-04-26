@@ -6,7 +6,7 @@ function onClickHandler(){
     window.location="/"
    };
 function Searching(){
-    window.location="/query"
+    window.location="/search"
 }
 function Home(){
     window.location="/home"
