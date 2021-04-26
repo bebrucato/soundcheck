@@ -13,6 +13,8 @@ import Login from "./pages/Login/index"
 import InternalProfile from "./pages/internalprofile";
 
 
+
+
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
   {...rest}
@@ -34,7 +36,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 function App() {
   return (
     <Router>
- 
       <div>
       <Switch>
           <Route  exact path="/" component={Landing} />

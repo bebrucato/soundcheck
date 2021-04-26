@@ -17,7 +17,7 @@ class ProfileBox extends Component {
                         <li>Currently Listening to:{}</li>
                         <li>Preferred Genre:{}</li>
                         <li>Top 3 Favorite Musicians:{}</li>
-                        <li>Links:{}</li>
+                        {/* <li>Links:{}</li> */}
                     </ul>
                 </div>
             </div>

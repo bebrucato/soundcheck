@@ -1,0 +1,97 @@
+.gridcontainer {
+    /* display: grid;
+    grid-template-columns: 1fr 3fr; */
+    display: flex;
+    flex-direction: row;
+    /* border: 5px solid purple; */
+    width: 100%;
+    margin-left: 0;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+img {
+    align-self: center;
+}
+
+.row {
+    align-self: center;
+    display: flex;
+    /* grid-template-columns: 1fr 80px 1fr; */
+    margin-top: 100px;
+    /* border: 5px solid red; */
+    margin: 50px
+}
+
+.title {
+    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    color: rgba(167, 62, 62, 0.8);
+    align-self: flex-start;
+    margin-left: 2px;
+
+}
+
+.messagebutton {
+    align-self: center;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.897);
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+
+.left {
+    margin-right: 0px;
+    /* border: 5px solid blue; */
+    background:  white;
+}
+
+.cloudinary,
+.profilebox{
+    background-color: whitesmoke;
+    min-width: 200px;
+    width: 300px;
+    height: 450px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 3px solid  rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 1rem 2rem 2rem 2rem;
+    
+}
+
+.cloudinary {
+    margin-left:30px;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    /* color: black */
+}
+
+.media {
+    padding: 10px;
+    background-color: #ccc;
+  }

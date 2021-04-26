@@ -5,7 +5,12 @@ import SecondLogo from "./soundchecksecondary.png"
 function onClickHandler(){
     window.location="/"
    };
-
+function Searching(){
+    window.location="/search"
+}
+function Home(){
+    window.location="/home"
+}
 class SideBar extends Component {
     render() {
         return (
@@ -13,9 +18,9 @@ class SideBar extends Component {
                 <div className="side-bar">
                     <img src={SecondLogo} alt="SOUNDCHECK" width="200px"/>
                     <div className="menu">
-                        <li>Home</li>
+                        <li onClick={Home}>Home</li>
                         <li>Profile</li>
-                        <li>Search</li>
+                        <li onClick={Searching}>Search</li>
                         <li>Forum</li>
                         <li onClick={onClickHandler}>Log Out</li>
                     </div>

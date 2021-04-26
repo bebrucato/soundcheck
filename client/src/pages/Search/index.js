@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import API from "../../utils/API";
+import SideBar from "../../components/SideBar/sidebar"
+import "./search.css"
+
 function Search() {
     const [users, setUsers] = useState([])
     const [query, setQuery] = useState("")
@@ -16,12 +19,14 @@ function Search() {
         }).catch(err => console.log(err))
     }
     return (
-        <div>
+        <div className="search">
             <input value={query} onChange={(e) => setQuery(e.target.value)} />
             <button onClick={searchUsers}>Search Users</button>
-            {users?.map(user => (
+            {users.map(user => (
                 <h1>{user.firstName}</h1>
             ))}
+            <SideBar />
+
         </div>
 
 
