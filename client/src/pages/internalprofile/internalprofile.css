@@ -21,6 +21,15 @@ img {
     margin: 50px
 }
 
+.photo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .cloudinary {
+      overflow: scroll;
+  }
+
 .messagebutton {
     align-self: center;
     width: 400px;

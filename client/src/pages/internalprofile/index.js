@@ -6,6 +6,7 @@ import SideBar from "../../components/SideBar/sidebar"
 import ImageUpload from "../../utils/imageUpload"
 import ProfileBox from '../../components/ProfileBox/profilebox'
 import "./internalprofile.css";
+import logoguitar from "../../images/logoguitar.jpg"
 
 class InternalProfile extends Component {
     render() {
@@ -20,15 +21,15 @@ class InternalProfile extends Component {
                 <div className="row">
                     <ProfileBox />
                     <div className="cloudinary">
-                        <div className="media" id="media1">{}</div>
-                        <div className="media" id="media2">{}</div>
-                        <div className="media" id="media3">{}</div>
-                        <div className="media" id="media4">{}</div>
-                        <div className="media" id="media5">{}</div>
-                        <div className="media" id="media6">{}</div>
-                        <div className="media" id="media7">{}</div>
-                        <div className="media" id="media8">{}</div>
-                        <div className="media" id="media9">{}</div>
+                        <div className="media" id="media1"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media2"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media3"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media4"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media5"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media6"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media7"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media8"><img className="photo" src={ logoguitar } /></div>
+                        <div className="media" id="media9"><img className="photo" src={ logoguitar } /></div>
                     </div>
                    <ImageUpload />
                 </div>
