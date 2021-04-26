@@ -20,6 +20,8 @@ router.route("/login")
 
 router.route("/home")
  .post(userController.create)
+
+
   
 
 module.exports = router;
